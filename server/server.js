@@ -427,6 +427,5 @@ app.post("/convert-excel", (req, res) => {
 /* ------------------------------------------------------------------
    START SERVER
 ------------------------------------------------------------------- */
-app.listen(5000, () =>
-  console.log("🔥 Excel Cleaner FINAL VERSION running on port 5000")
-);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log("🔥 Backend running on PORT", PORT));
